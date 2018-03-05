@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 1f59c21be19fd2549b2907a903316b5e
+timeCreated: 1520200915
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - winText: {instanceID: 0}
+  - default_color: {fileID: 2100000, guid: a4630074a9ef2024daf5d47e522369d2, type: 2}
+  - red: {fileID: 2100000, guid: 042bcf4f26b211c4b82586122e3bd6fc, type: 2}
+  - green: {fileID: 2100000, guid: 0057f07d41a00e841a6f1f04257c6767, type: 2}
+  - blue: {fileID: 2100000, guid: b5cd3dc4a0d08ba4b80edc5ef4f66b15, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
