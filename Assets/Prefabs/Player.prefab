@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f59c21be19fd2549b2907a903316b5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  globalA: {fileID: 114366632329718820, guid: 34bbb68cedc17984a854acc87813a6f2, type: 2}
   winText: {fileID: 0}
   thrust: 30
   maxVelocity: 7.5

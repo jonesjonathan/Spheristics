@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour {
 
     //Name the colors RGB for quick access and efficent speeds
     enum Colors {NONE, RED, GREEN, BLUE};
 
+    public GlobalActions globalA;
     public Text winText;
     public int thrust;
     public float maxVelocity;
@@ -48,12 +50,19 @@ public class PlayerScript : MonoBehaviour {
         }
     }
 
+    IEnumerator ExecuteAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadScene(globalA.getScenes()[globalA.nextScene]);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         //Trigger the finish
         if(other.gameObject.CompareTag("Finish"))
         {
             winText.text = "Level-Complete";
+            StartCoroutine(ExecuteAfterTime(3));
         }
 
         //Key pickup
